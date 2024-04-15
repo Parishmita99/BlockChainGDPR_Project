@@ -6,7 +6,7 @@ This repository contains a Solidity smart contract implementing a GDPR-compliant
 **Smart Contract Details:**
 - `MyContract`: A simple contract with a `setValue` function to set a uint value and a `getValue` function to retrieve it.
 - `GDPRDataManagementProtocol`: The main contract implementing the GDPR-compliant data management protocol. It includes functionalities for uploading data, requesting data, accessing data, and managing access tokens.
-
+![Screenshot]
 **Features:**
 - Secure data management using encryption and access tokens.
 - GDPR compliance ensuring data privacy and protection.
