@@ -1,0 +1,222 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "dataUser",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes",
+				"name": "decryptedData",
+				"type": "bytes"
+			}
+		],
+		"name": "DataAccessed",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "dataOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "dataRequester",
+				"type": "address"
+			}
+		],
+		"name": "DataRequested",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "dataOwner",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes",
+				"name": "encryptedData",
+				"type": "bytes"
+			},
+			{
+				"indexed": false,
+				"internalType": "bytes",
+				"name": "encryptedKey",
+				"type": "bytes"
+			}
+		],
+		"name": "DataUploaded",
+		"type": "event"
+	},
+	{
+		"inputs": [],
+		"name": "accessData",
+		"outputs": [
+			{
+				"internalType": "bytes",
+				"name": "",
+				"type": "bytes"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "accessTokens",
+		"outputs": [
+			{
+				"internalType": "bytes",
+				"name": "accessToken",
+				"type": "bytes"
+			},
+			{
+				"internalType": "bool",
+				"name": "isValid",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "dataRecords",
+		"outputs": [
+			{
+				"internalType": "bytes",
+				"name": "encryptedData",
+				"type": "bytes"
+			},
+			{
+				"internalType": "bytes",
+				"name": "encryptedKey",
+				"type": "bytes"
+			},
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "bool",
+				"name": "isUploaded",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "dataOwner",
+				"type": "address"
+			}
+		],
+		"name": "getPublicKey",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "initialize",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "keyPairs",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "publicKey",
+				"type": "address"
+			},
+			{
+				"internalType": "bytes",
+				"name": "privateKey",
+				"type": "bytes"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "dataOwner",
+				"type": "address"
+			}
+		],
+		"name": "requestData",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes",
+				"name": "encryptedData",
+				"type": "bytes"
+			},
+			{
+				"internalType": "bytes",
+				"name": "encryptedKey",
+				"type": "bytes"
+			}
+		],
+		"name": "uploadData",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
